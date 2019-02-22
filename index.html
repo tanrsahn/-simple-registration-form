@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "ansi"/>
+		<title>My Form Exercise(Project2)</title>
+		<link rel="stylesheet" href="css/project2style.css" />
+		<script src="js/project2script.js"></script>
+	</head>
+	<body>
+		<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+			Aşağıdaki hiçbir input boş olmamalı: <br>
+			<table style="width:60%">
+			<tr height="40">
+				<td width="300">Boş olmamalı: </td>
+				<td width="30"><input type="text" id="name"></td>
+				<td width="300" id="myoutput0"></td>
+			</tr>
+			
+			<tr height="40">
+				<td width="300">E-mail (Kurallara uygun email): </td>
+				<td width="30"><input type="text" id="email"></td>
+				<td width="300" id="myoutput1"></td>
+			</tr>
+		  
+			<tr height="40">
+				<td width="300">Sadece sayısal: </td>
+				<td width="30"><input type="text" id="sayisal"></td>
+				<td width="300" id="myoutput2"></td>
+			</tr>
+		  
+			<tr height="40">
+				<td width="300">Sadece sayısal olan ve 12 basamak uzunluğundaki sayi: </td>
+				<td width="30"><input type="text" id="basamakli"></td>
+				<td width="300" id="myoutput3"></td>
+			</tr>
+		  
+			<tr height="40">
+				<td width="300">Sadece harf (a..z veya A..Z): </td>
+				<td width="30"><input type="text" id="alfa"></td>
+				<td width="300" id="myoutput4"></td>
+			</tr>
+		  
+			<tr height="40">
+				<td width="300">Sadece harf ve en fazla 30 uzunlukta olan string: </td>
+				<td width="30"><input type="text" id="max30"></td>
+				<td width="300" id="myoutput5"></td>
+			</tr>
+		  
+			<tr height="40">
+				<td width="300">3 kelimeden oluşan string: </td>
+				<td width="30"><input type="text" id="uckelime"></td>
+				<td width="300" id="myoutput6"></td>
+			</tr>
+		  
+			<tr height="40">
+				<td width="300">En az 1 büyük harf, en az 1 küçük harf, en az bir rakam ve en az 1 noktalama işareti içeren ve en az 8 uzunluğunda olan metin: </td>
+				<td width="30"><input type="text" id="password"></td>
+				<td width="300" id="myoutput7"></td>
+			</tr>
+		</table>
+		
+		<br>
+		<input type="submit" value="Submit">
+		</form>
+	</body>
+	
+</html>
